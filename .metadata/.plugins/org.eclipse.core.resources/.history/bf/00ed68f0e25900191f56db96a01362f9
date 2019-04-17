@@ -1,0 +1,42 @@
+package Test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AutoSuggestion {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://www.makemytrip.com");
+		
+		//handling autosuggestive dropdown using selenium
+		
+		WebElement source = driver.findElement(By.id("fromCity"));
+		//syntax for clearing textbox
+		driver.findElement(By.id("fromCity")).clear();
+		//telling navigate around by using first 3 letters
+		driver.findElement(By.id("fromCity")).sendKeys("MUM");
+		//to prevent it from taking long to respond
+		Thread.sleep(2000);
+		//tell it to select the navigated 3 letter by pressing enter
+		driver.findElement(By.id("fromCity")).sendKeys(Keys.ENTER);
+		
+		//you can handle it this way using source, through everything in one source
+		//source.clear();
+		//source.sendKeys("MUM");
+		//Thread.sleep(2000);
+		//source.sendKeys(Keys.ENTER);
+		
+		
+		
+		
+		
+				
+	}
+
+}

@@ -1,0 +1,21 @@
+package Test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Radionbutton {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\chromedriver.exe");
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://www.echoecho.com/htmlforms10.htm");
+		driver.findElement(By.xpath("//input[@value='Butter']")).click();
+		//checking the sizes of radio buttons in one group
+		System.out.println(driver.findElement(By.xpath("//input[@name='group1']")).getSize());
+		
+		
+	}
+
+}
