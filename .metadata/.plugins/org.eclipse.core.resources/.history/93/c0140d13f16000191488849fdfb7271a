@@ -23,7 +23,7 @@ public class Css {
 		driver.findElement(By.xpath("//input[@id='Login']")).click(); //xpath
 		driver.findElement(By.cssSelector("login"));
 		
-		System.out.print("hello");
+		
 		
 		
 
