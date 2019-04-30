@@ -28,7 +28,7 @@ public class Demo {
 		   
 		   //when validating source page
 		   //System.out.print(driver.getPageSource());
-		   
+		  
 		   //
 		   driver.get("http://yahoo.com");
 		   //when you want to go back to the first browser

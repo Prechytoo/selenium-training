@@ -16,7 +16,7 @@ public class DynamicDropdown {
 		driver.get("http://www.spicejet.com");
 	//  //input[@value='Chennai (MAA)'] - xpath for chennai
 	// //a[@value='BLR']	
-		
+	
 		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 		
 		driver.findElement(By.xpath("//a[@value='BLR']")).click();

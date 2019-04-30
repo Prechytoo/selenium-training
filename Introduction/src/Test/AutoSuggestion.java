@@ -26,7 +26,7 @@ public class AutoSuggestion {
 		//tell it to select the navigated 3 letter by pressing enter
 		driver.findElement(By.id("fromCity")).sendKeys(Keys.ENTER); 
 		
-		
+	
 		//you can handle it this way using source, through everything in one source
 		//WebElement source = driver.findElement(By.id("fromCity"));
 		//source.clear();
@@ -34,7 +34,7 @@ public class AutoSuggestion {
 		//Thread.sleep(2000);
 		//source.sendKeys(Keys.ENTER);
 		
-		
+	
 		
 		//for To textbox
 		

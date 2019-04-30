@@ -16,7 +16,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 		//driver.switchTo().alert().sendKeys("fesfe");
 		driver.switchTo().alert().accept();   //Accept ok, done, yes pop up box
 		
-		
+	
 			//when working on cancel button, which is negative scenario
 		//driver.switchTo().alert().dismiss();
 		

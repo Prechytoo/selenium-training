@@ -18,7 +18,7 @@ public class Assertions {
 				//for false values
 		//Assert.assertFalse(true);System.out.println(driver.findElement(By.cssSelector("input[id*= 'SeniorCitizenDiscount']")).isSelected());
 		
-			//first it must return false before selecting
+		//first it must return false before selecting
 		driver.findElement(By.cssSelector("input[id*= 'SeniorCitizenDiscount']")).click();
 		
 		 // then return true if is selected, to check if the check box is selected

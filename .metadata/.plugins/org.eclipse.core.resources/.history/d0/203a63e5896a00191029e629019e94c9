@@ -1,0 +1,55 @@
+package Test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Assignment2 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://www.facebook.com");
+		 System.out.println( driver.getTitle());
+		 
+		 driver.findElement(By.cssSelector("input[name='email']")).sendKeys("Precious");
+			driver.findElement(By.xpath("input[name='pass']")).sendKeys("tsha414421"); 
+			driver.findElement(By.xpath("[value='Log In']")).click();
+			Thread.sleep(2000);
+			 driver.navigate().back();
+			 
+			
+		 
+		 Thread.sleep(2000);
+		driver.findElement(By.name("firstname")).sendKeys("Cindy");
+		driver.findElement(By.xpath("//*[@id='u_0_l']")).sendKeys("Tshabalala");
+		driver.findElement(By.xpath("//*[@id='u_0_o']")).sendKeys("0818602756");
+		driver.findElement(By.name("reg_passwd__")).sendKeys("Prechy4u2");
+		
+		Select day = new Select(driver.findElement(By.id("day")));
+		day.selectByValue("6");
+		//day.click();
+		//driver.findElement(By.id("day")).getText();
+		
+		Select month = new Select(driver.findElement(By.id("month")));
+		//month.selectByVisibleText("march");
+		month.selectByIndex(2);
+		
+		
+		Select year = new Select(driver.findElement(By.id("year")));
+		//year.selectByVisibleText("1990");
+		year.selectByIndex(7);
+		
+		
+		
+		
+	
+		
+		
+		
+	}
+
+}

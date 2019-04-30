@@ -38,6 +38,6 @@ public class Radionbutton {
 				  driver.findElements(By.xpath("//input[@name='group1']")).get(i).click(); 
 			  }
 		 }
-	
+
 	}
 }

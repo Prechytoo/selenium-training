@@ -23,4 +23,3 @@ public class checkbox {
 		driver.findElement(By.id("divpaxinfo")).click(); // for adding 1
 	}
 }
-

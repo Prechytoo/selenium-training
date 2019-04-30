@@ -13,7 +13,7 @@ public class e2e {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.spicejet.com");
 		
-									//steps for booking
+								//steps for booking
 			//FOR one way radio button
 		driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_0")).click();
 			//select the depart city
@@ -71,7 +71,7 @@ public class e2e {
 		 
 		 
 		
-		 
+		
 		 
 	}
 			
